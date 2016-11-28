@@ -64,7 +64,7 @@ brew install dns2tcp
 brew install fcrackzip
 brew install foremost
 brew install hashpump
-brew install hydra
+#brew install hydra
 brew install john
 brew install knock
 brew install netpbm
