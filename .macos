@@ -918,5 +918,5 @@ defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 #	"Opera" "Photos" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
 #	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 #	killall "${app}" &> /dev/null
-done
+#done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
