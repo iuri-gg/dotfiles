@@ -104,6 +104,13 @@ brew install zstd
 brew install mongodb
 brew install redis
 brew install postgresql
+brew install nodejs
+brew install yarn
+
+# Start Services
+brew services restart mongodb
+brew services restart redis
+brew services restart postgresql
 
 # Remove outdated versions from the cellar.
 brew cleanup
