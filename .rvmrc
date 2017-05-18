@@ -57,7 +57,7 @@ export rvm_gemset_create_on_use_flag=1
 
 # Make Flags, I have 8 cpu's so I might use 7 make threads:
 #
-export rvm_make_flags="-j8"
+#export rvm_make_flags="-j8"
 
 # Source a .rvmrc file in a directory after changing to it, if it exists.
 # To disable this fature, set in root/home .rvmrc file:
