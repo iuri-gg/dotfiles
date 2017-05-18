@@ -10,7 +10,12 @@ brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-#brew install coreutils
+brew install coreutils
+brew install autoconf
+brew install automake
+brew install libtool
+brew install pkg-config
+brew install libyaml
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
