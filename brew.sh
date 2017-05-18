@@ -106,6 +106,7 @@ brew install redis
 brew install postgresql
 brew install nodejs
 brew install yarn
+brew install gnupg2
 
 # Start Services
 brew services restart mongodb
