@@ -113,6 +113,7 @@ brew install nodejs
 brew install yarn
 brew install gnupg2
 brew install jemalloc
+brew install ansible
 
 # Start Services
 brew services restart mongodb
