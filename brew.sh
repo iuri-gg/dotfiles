@@ -10,12 +10,12 @@ brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew install coreutils
-brew install autoconf
-brew install automake
-brew install libtool
-brew install pkg-config
-brew install libyaml
+#brew install coreutils
+#brew install autoconf
+#brew install automake
+#brew install libtool
+#brew install pkg-config
+#brew install libyaml
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -27,7 +27,6 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 #brew install bash
-#brew tap homebrew/versions
 #brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -39,17 +38,14 @@ brew install gnu-sed --with-default-names
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-#brew install ringojs
-#brew install narwhal
+# Install GnuPG to enable PGP-signing commits.
+brew install gnupg
 
 # Install more recent versions of some macOS tools.
 #brew install vim --with-override-system-vi
-#brew install homebrew/dupes/grep
-#brew install homebrew/dupes/openssh
-#brew install homebrew/dupes/screen
+#brew install grep
+#brew install openssh
+#brew install screen
 #brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
@@ -86,34 +82,31 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install dark-mode
 #brew install exiv2
 #brew install git
 #brew install git-lfs
-#brew install imagemagick --with-webp
+brew install imagemagick --with-webp
 #brew install lua
 #brew install lynx
 #brew install p7zip
 #brew install pigz
 #brew install pv
 brew install rename
-#brew install rhino
-brew install speedtest_cli
 brew install ssh-copy-id
-brew install testssl
 brew install tree
 brew install vbindiff
-#brew install webkit2png
 #brew install zopfli
+
+# Custom
 brew install zstd
 brew install mongodb
 brew install redis
 brew install postgresql
 brew install nodejs
 brew install yarn
-brew install gnupg2
 brew install jemalloc
 brew install ansible
+brew install speedtest_cli
 
 # Start Services
 brew services restart mongodb
