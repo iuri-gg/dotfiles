@@ -103,6 +103,7 @@ brew install yarn
 brew install jemalloc
 brew install ansible
 brew install speedtest_cli
+brew install pinentry-mac
 
 # Start Services
 brew services restart mongodb

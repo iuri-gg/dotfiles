@@ -46,3 +46,9 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Add support for gpg ssh auth and gpg-agent autostart
+export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
+if [ ! -e "$HOME/.gnupg/S.gpg-agent" ]; then
+	gpg --card-status;
+fi;
