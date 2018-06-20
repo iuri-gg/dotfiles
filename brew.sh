@@ -85,7 +85,7 @@ brew install imagemagick --with-webp
 #brew install lynx
 #brew install p7zip
 #brew install pigz
-#brew install pv
+brew install pv
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
@@ -95,7 +95,6 @@ brew install vbindiff
 
 # Custom
 brew install zstd
-brew install mongodb
 brew install redis
 brew install postgresql
 brew install nodejs
@@ -104,9 +103,12 @@ brew install jemalloc
 brew install ansible
 brew install speedtest_cli
 brew install pinentry-mac
+brew install teleport
+brew install azure-cli
+brew install htop
+brew install jq
 
 # Start Services
-brew services restart mongodb
 brew services restart redis
 brew services restart postgresql
 
