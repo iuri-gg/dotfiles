@@ -12,6 +12,7 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
+	chmod -R 700 ~/.gnupg;
 	source ~/.bash_profile;
 }
 
