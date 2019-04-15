@@ -185,3 +185,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	signingkey = C49CA37D2C33D09B
+	email = igagnidz@gmail.com
+	name = Iuri G.
