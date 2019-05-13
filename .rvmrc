@@ -37,7 +37,7 @@
 # Gem Options
 #   These options are passed to the 'gem' command in a RVM environment.
 #
-export rvm_gem_options="--no-rdoc --no-ri"
+export rvm_gem_options="--no-document"
 
 # Temp Path
 #   This is where rvm stores all of its temporary files.
