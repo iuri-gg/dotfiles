@@ -33,7 +33,7 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -103,9 +103,9 @@ brew install postgresql@10
 brew link --force --overwrite postgresql@10
 brew install node@10
 brew link --force --overwrite node@10
-brew install yarn
+brew install yarn --ignore-dependencies
 brew install jemalloc
-brew install ansible
+#brew install ansible
 brew install speedtest_cli
 brew install pinentry-mac
 brew install teleport
