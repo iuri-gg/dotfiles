@@ -21,7 +21,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -84,7 +84,7 @@ brew install ack
 #brew install git
 #brew install git-lfs
 #brew install gs
-brew install imagemagick --with-webp
+#brew install imagemagick
 #brew install lua
 #brew install lynx
 #brew install p7zip
@@ -100,23 +100,48 @@ brew install vbindiff
 # Custom
 brew install zstd
 brew install redis
-brew install postgresql@10
-brew link --force --overwrite postgresql@10
-brew install node@10
-brew link --force --overwrite node@10
-brew install yarn --ignore-dependencies
+brew install postgresql
+brew install node
+brew install yarn
 brew install jemalloc
-#brew install ansible
+brew install ansible
 brew install speedtest_cli
 brew install pinentry-mac
-brew install teleport
-brew install azure-cli
+brew install shellcheck
 brew install htop
 brew install jq
+brew install golang
 
 # Start Services
 brew services restart redis
-brew services restart postgresql@10
+brew services restart postgresql
+
+# Install Apps
+brew cask install 1password
+brew cask install docker
+brew cask install goland
+brew cask install rubymine
+brew cask install skype
+brew cask install angry-ip-scanner
+brew cask install appcleaner
+brew cask install daisydisk
+brew cask install firefox
+brew cask install hex-fiend
+brew cask install iterm2
+brew cask install nextcloud
+brew cask install paw
+brew cask install tunnelblick
+brew cask install vlc
+brew cask install deltawalker
+brew cask install sublime-text
+brew cask install vscodium
+brew cask install vuze
+brew cask install vmware-fusion
+brew cask install polar-bookshelf
+brew cask install vuze
+brew cask install intel-power-gadget
+brew cask install istat-menus
+brew cask install little-snitch
 
 # Remove outdated versions from the cellar.
 brew cleanup
