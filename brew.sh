@@ -59,9 +59,9 @@ brew install binutils
 brew install binwalk
 brew install cifer
 #brew install dex2jar
-brew install dns2tcp
+# brew install dns2tcp
 #brew install fcrackzip
-brew install foremost
+#brew install foremost
 #brew install hashpump
 #brew install hydra
 #brew install john
@@ -101,8 +101,6 @@ brew install vbindiff
 brew install zstd
 brew install redis
 brew install postgresql
-brew install node
-brew install yarn
 brew install jemalloc
 brew install ansible
 brew install speedtest_cli
@@ -110,38 +108,28 @@ brew install pinentry-mac
 brew install shellcheck
 brew install htop
 brew install jq
-brew install golang
 
 # Start Services
 brew services restart redis
 brew services restart postgresql
 
 # Install Apps
-brew cask install 1password
-brew cask install docker
-brew cask install goland
-brew cask install rubymine
-brew cask install skype
-brew cask install angry-ip-scanner
-brew cask install appcleaner
-brew cask install daisydisk
-brew cask install firefox
-brew cask install hex-fiend
-brew cask install iterm2
-brew cask install nextcloud
-brew cask install paw
-brew cask install tunnelblick
-brew cask install vlc
-brew cask install deltawalker
-brew cask install sublime-text
-brew cask install vscodium
-brew cask install vuze
-brew cask install vmware-fusion
-brew cask install polar-bookshelf
-brew cask install vuze
-brew cask install intel-power-gadget
-brew cask install istat-menus
-brew cask install little-snitch
+brew install --cask 1password
+brew install --cask docker
+brew install --cask rubymine
+brew install --cask angry-ip-scanner
+brew install --cask appcleaner
+brew install --cask firefox
+brew install --cask hex-fiend
+brew install --cask iterm2
+brew install --cask nextcloud
+brew install --cask paw
+brew install --cask tunnelblick
+brew install --cask vlc
+brew install --cask deltawalker
+brew install --cask sublime-text
+brew install --cask istat-menus
+brew install --cask little-snitch
 
 # Remove outdated versions from the cellar.
 brew cleanup
