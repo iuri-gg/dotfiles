@@ -127,7 +127,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	gpgsign = false
 
 [diff]
 
@@ -183,6 +183,9 @@
 	defaultBranch = main
 
 [user]
-	signingkey = C49CA37D2C33D09B
-	email = iuri@gdna.co
+	#signingkey = C49CA37D2C33D09B
+	email = 289754+iuri-gg@users.noreply.github.com
 	name = Iuri G.
+
+[pull]
+	rebase = true

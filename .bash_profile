@@ -4,6 +4,8 @@ export PATH="$HOME/bin:$PATH";
 # Enable Bootsnap for Homebrew
 export HOMEBREW_BOOTSNAP=1
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -53,7 +55,14 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # Add support for gpg ssh auth and gpg-agent autostart
-export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
-if [ ! -e "$HOME/.gnupg/S.gpg-agent" ]; then
-	gpg --card-status > /dev/null;
-fi;
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+#export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
+#if [ ! -e "$HOME/.gnupg/S.gpg-agent" ]; then
+#	gpg --card-status > /dev/null;
+#fi;
+
+# Ruby defaults
+export RUBY_YJIT_ENABLE="1"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export RUBY_CONFIGURE_OPTS="--enable-yjit --with-jemalloc"
+
